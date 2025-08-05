@@ -11,7 +11,7 @@ public class Spring03Application {
 	@GetMapping("/")//기본 경로
 	public String open() {
 		return "Spring03 Start : 08051530";
-	}
+	}//branch
 	public static void main(String[] args) {
 		System.out.println("Spring03 Start");
 		SpringApplication.run(Spring03Application.class, args);
