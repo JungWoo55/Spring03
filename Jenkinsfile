@@ -25,7 +25,7 @@ pipeline {
         stage('3. Docker build') {
             steps {
                 echo 'Docker build(이미지 생성)'
-                sh 'docker build -t ex03-app:latest'
+                sh 'docker build -t ex03-app:latest .'
             }
         }
                 
