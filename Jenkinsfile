@@ -8,14 +8,14 @@ pipeline {
     stages {
         stage('0. 연결 확인') { steps { echo '스테이지 출발' } }
         
-        stage('1. Build') {
+        stage('1. Build1') {
             steps {
                 echo 'Maven으로 빌드 시작'
                 sh 'mvn clean package'
             }
         }
         
-        stage('2. Docker 버전 확인') {
+        stage('2. Docker 버전 확인1') {
             steps {
                 echo 'Docker version check'
                 sh 'docker version'
