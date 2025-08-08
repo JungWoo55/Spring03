@@ -38,7 +38,10 @@ pipeline {
                     docker tag ex03-app:latest $DOCKERHUB_USERNAME/ex03-app:latest
                     docker push $DOCKERHUB_USERNAME/ex03-app:latest
                     '''
-                 stage('5. Deploy to vm7') {
+                 }
+            }
+        }
+        stage('5. Deploy to vm7') {
             steps {
                 sh '''
                     ssh -o StrictHostKeyChecking=no $TARGET_USER@$TARGET_HOST <<EOF
@@ -50,10 +53,6 @@ pipeline {
 EOF # 반드시 맨앞에
                 '''
             }
-        }        
-    }
-}        
-            }
-        }
+        }                                       
     }
 }
