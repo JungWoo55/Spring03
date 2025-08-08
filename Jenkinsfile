@@ -26,7 +26,7 @@ pipeline {
                 sh 'docker build -t ex03-app:latest .'
             }
         }
-        stage('4. Docker Push2') {
+        stage('4. Docker Push3') {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'dockerhub-mjw',
