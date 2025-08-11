@@ -42,11 +42,19 @@ pipeline {
                 }
             }
         }*/
-        stage('5. Deploy to K3s') {
+       /* stage('5. Deploy to K3s') {
             steps {
                 sh '''
                 export KUBECONFIG=/home/vagrant/.kube/config
                 kubectl apply -f k8s-deployment.yaml
+                '''
+            }
+        }*/
+          stage('6. Deploy with Helm') {
+            steps {
+                sh '''
+                export KUBECONFIG=/home/vagrant/.kube/config                
+                helm upgrade --install ex03-app ./charts/ex03-app --namespace default
                 '''
             }
         }

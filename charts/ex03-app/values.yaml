@@ -1,0 +1,8 @@
+pod:
+  name: ex03-app
+
+image:
+  repository: jungwoo525/ex03-app
+  tag: latest
+
+containerPort: 8081
