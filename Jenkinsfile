@@ -41,7 +41,7 @@ pipeline {
                     '''
                 }
             }
-        }*/
+        }
        stage('5. Deploy to K3s') {
             steps {
                 sh '''
