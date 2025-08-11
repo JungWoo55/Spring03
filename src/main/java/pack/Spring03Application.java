@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Spring03Application {
 	@GetMapping("/")//기본 경로
 	public String open() {
-		return "Spring03 Start : 250811/17:08";
+		return "Spring03 Start : 250811/17:30";
 	}//branch
 	public static void main(String[] args) {
 		System.out.println("Spring03 Start");
