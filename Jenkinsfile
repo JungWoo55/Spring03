@@ -27,7 +27,7 @@ pipeline {
             }
         }*/
 
-/*      stage('4. Docker Push') {
+/*      stage('4. Docker Push1') {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'dockerhub-mjw',
